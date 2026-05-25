@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamzeh's WebSite</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="site-header">
+        <div class="brand">Hamzeh</div>
+        <nav class="site-nav">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <button id="themeButton" class="button secondary">Dark theme</button>
+        </nav>
+      </div>
+
+      <div class="hero-content" id="home">
+        <p class="eyebrow">Web developer • Project creator • Physics explorer</p>
+        <h1>Welcome to Hamzeh's creative corner.</h1>
+        <p>Discover my latest projects, learn more about my skills, and get in touch with a smooth modern landing page experience.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="button primary">Explore Projects</a>
+          <a href="#contact" class="button secondary">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="panel">
+        <div class="section-heading">
+          <span>Introduction</span>
+          <h2>About Hamzeh</h2>
+        </div>
+        <p>This is the homepage of Hamzeh's personal website. Here you can find information about me, my projects, and how to contact me. I build interactive web experiences, browser extensions, and physics simulations.</p>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Creative projects</h4>
+            <p>Custom web tools and polished interactions for real use cases.</p>
+          </div>
+          <div class="feature-card">
+            <h4>Modern design</h4>
+            <p>A clean theme with responsive layout for desktop and mobile.</p>
+          </div>
+          <div class="feature-card">
+            <h4>Fast contact</h4>
+            <p>One-click email copy and smooth navigation to reach me quickly.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="panel projects">
+        <div class="section-heading">
+          <span>Work</span>
+          <h2>Latest Projects</h2>
+        </div>
+        <div class="project-list">
+          <article class="project-card">
+            <h3>Physics Simulator</h3>
+            <p>A realistic simulation project that explores motion and quantum concepts in an interactive environment.</p>
+            <a href="https://github.com/hamzehbarakat7/Unified-Physics-Simulator-2025" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+          <article class="project-card">
+            <h3>Tokyo Night Extension</h3>
+            <p>A custom browser tab extension with immersive design and beautiful night mode styling.</p>
+            <a href="https://github.com/hamzehbarakat7/Tokyo-night-new-tab-extension-" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+          <article class="project-card">
+            <h3>Project Management</h3>
+            <p>A productivity tool designed to help teams stay organized, track tasks, and ship work faster.</p>
+            <a href="https://github.com/hamzehbarakat7/Project-Management-Software" target="_blank" rel="noopener">View on GitHub</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="panel">
+        <div class="section-heading">
+          <span>Get in touch</span>
+          <h2>Contact Information</h2>
+        </div>
+        <div class="contact-footer">
+          <p>Want to work together? Send an email, follow on Instagram, or check my GitHub profile.</p>
+          <p><strong>Email:</strong> hamzehbarakat049@gmail.com</p>
+          <p><strong>Instagram:</strong> @ehjnye</p>
+          <p><strong>GitHub:</strong> @hamzehbarakat7</p>
+          <div>
+            <button id="emailButton" class="button primary">Copy email address</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>&copy; 2024 Hamzeh's WebSite. All rights reserved.</small>
+      <small>Built with responsive HTML, CSS, and JavaScript.</small>
+    </footer>
+  </div>
+  <div id="toast" class="toast">Copied to clipboard</div>
+</body>
+</html>
