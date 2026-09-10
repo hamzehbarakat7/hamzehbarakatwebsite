@@ -10,6 +10,7 @@
   --accent-2: #2b6cb0;
   --border: rgba(24, 59, 114, 0.14);
   --shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+  --radius: 24px;
 }
 
 * {
@@ -122,7 +123,8 @@ header.hero {
 .hero-content h1,
 .section-heading h2,
 .project-card h3,
-.feature-card h4 {
+.feature-card h4,
+.cert-card h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -227,6 +229,42 @@ header.hero {
 
 .project-card a {
   color: var(--accent);
+}
+
+/* Certificates Grid */
+.certificates-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 24px;
+}
+
+.cert-card {
+  background: var(--surface-alt);
+  border: 1px solid rgba(24, 59, 114, 0.12);
+  border-radius: 20px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.cert-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.cert-card h4 {
+  margin: 14px 0 4px;
+  font-size: 1rem;
+  color: var(--text);
 }
 
 .feature-grid {
